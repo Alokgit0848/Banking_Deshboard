@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Banking Dashboard</h1>
+
+        <div class="account-info">
+            <div class="balance">
+                <h2>Current Balance</h2>
+                <p id="currentBalance">$0.00</p>
+            </div>
+
+            <div class="deposit">
+                <h2>Deposit</h2>
+                <input type="number" id="depositAmount" placeholder="Enter amount">
+                <button onclick="deposit()">Deposit</button>
+            </div>
+
+            <div class="withdraw">
+                <h2>Withdraw</h2>
+                <input type="number" id="withdrawAmount" placeholder="Enter amount">
+                <button onclick="withdraw()">Withdraw</button>
+            </div>
+        </div>
+
+        <div class="transaction-history">
+            <h2>Transaction History</h2>
+            <ul id="transactionList">
+                <li>No transactions yet.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
